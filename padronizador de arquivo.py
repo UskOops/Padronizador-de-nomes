@@ -4,7 +4,7 @@ path = 'C:\\temp' # Define o caminho do diretório
 files = os.listdir(path) # Lista os arquivos do diretório
 
 for file in files: # Percorre a lista de arquivos
-    if file.endswith('.zip'): # Se o arquivo terminar com .zip
+    if file.endswith('\\'): # Se o arquivo terminar com valor diferente de zip
         os.rename(file, file.replace('.zip', '.zip')) # Renomeia o arquivo
 if file[-27: -17] == file[-14: -4]: # Verifica se o nome do arquivo é igual ao nome do arquivo original
     old_name = path + '\\' + file # Cria o nome do arquivo antigo
